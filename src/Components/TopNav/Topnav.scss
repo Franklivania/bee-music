@@ -1,0 +1,63 @@
+@import '../../App.scss';
+
+.topnav{
+    position: absolute;
+    width: calc($width * 0.58);
+    // top: calc($height * 0.01);
+    left: calc($width * 0.2);
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    // background: $accent;
+    padding: 0.5rem 1rem;
+    z-index: 11;
+
+    .button{
+        color: $primary-color;
+        background: transparent;
+        margin: 0 2rem;
+        padding: 0.4rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &:hover{
+            color: $accent;
+        }
+    }
+
+    form{
+        position: relative;
+        width: calc($width * 0.7);
+        margin-left: auto;
+
+        input, button{
+            outline: none;
+            border: none;
+            resize: none;
+        }
+
+        input{
+            width: calc($width * 1);
+            font-size: $text;
+            padding: 0.4rem 3rem;
+            border-radius: $big-radius;
+            background: $white;
+
+            &::placeholder{
+                font-weight: 100;
+                color: $accent;
+                font-size: $small-text;
+            }
+        }
+
+        button{
+            position: absolute;
+            left: calc($width * 0.03);
+            top: calc($height * 0.016);
+            color: $accent;
+            background: transparent;
+            cursor: pointer;
+        }
+    }
+}

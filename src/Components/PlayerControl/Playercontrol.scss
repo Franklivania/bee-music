@@ -1,0 +1,27 @@
+@import '../../App.scss';
+
+.playercontrol{
+    position: absolute;
+    width: calc($width * 0.8);
+    top: calc($height * 0.8);
+    left: calc($width * 0.1);
+    padding: 1rem;
+    background: rgba($white, 1);
+    box-shadow: 0.04rem 0.04rem 0.3rem $accent,
+                -0.04rem -0.04rem 0.3rem $accent;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+
+    .top{
+        width: $width;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        aside{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+.dashboard{
+    position: relative;
+    width: $width;
+    height: $height;
+    background: $secondary-color;
+
+    .btn{
+        position: absolute;
+        top: calc(($height) * 0.02);
+        left: calc(($width) * 0.15);
+        padding: 0.3rem;
+        color: $accent;
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        z-index: 9;
+    }
+}

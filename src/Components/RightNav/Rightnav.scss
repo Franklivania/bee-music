@@ -1,0 +1,11 @@
+@import '../../App.scss';
+
+.rightnav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: $height;
+    width: calc(($width) * 0.22);
+    // border: 0.01rem solid $primary-color;
+    background: $accent;
+}

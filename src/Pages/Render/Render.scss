@@ -1,0 +1,10 @@
+@import '../../App.scss';
+
+.render{
+    position: absolute;
+    top: 0;
+    left: calc(($width) * 0.2);
+    height: $height;
+    width: calc(($width) * 0.58);
+    // border: 0.01rem solid $primary-color;
+}

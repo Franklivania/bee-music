@@ -1,0 +1,7 @@
+@import '../../App.scss';
+
+.login{
+    position: absolute;
+    top: calc($height * 0.9);
+    left: calc($width * 0.02);
+}

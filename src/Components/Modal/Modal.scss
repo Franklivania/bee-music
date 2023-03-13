@@ -1,0 +1,64 @@
+@import '../../App.scss';
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $width;
+    height: $height;
+    background: rgba($primary-color, 0.5);
+    z-index: 20;
+    display: grid;
+    place-items: center;
+
+    .modal{
+        background: $primary-color;
+        color: $secondary-color;
+        padding: 2rem;
+        z-index: 11;
+        border-radius: $border-radius;
+        height: calc($height * 0.3);
+        display: grid;
+        place-items: center;
+
+        #close{
+            position: absolute;
+            top: calc($height * 0.02);
+            right: calc($width * 0.02);
+            background: transparent;
+            z-index: 99;
+        }
+
+        h1{
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+
+            i{
+                color: $green;
+                padding: 0 0.3rem;
+            }
+        }
+
+        button{
+            outline: none;
+            border: none;
+            padding: 0.6rem 1.8rem;
+            border-radius: $big-radius;
+            background: $green;
+            color: $secondary-color;
+            font-size: $text;
+            font-weight: 500;
+            z-index: 9999;
+            cursor: pointer;
+            transition: transform .2s ease-in-out;
+
+            &:hover{
+                background: $white;
+                color: $green;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
