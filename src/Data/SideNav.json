@@ -1,0 +1,63 @@
+[
+    {
+        "title": "",
+        "content":[   
+            {
+                "id": 1,
+                "title":"Home",
+                "icon": "fa-solid fa-home"
+            },
+            {
+                "id": 2,
+                "title": "Trends",
+                "icon": "fa-solid fa-line-chart"
+            },
+            {
+                "id": 3,
+                "title": "Feed",
+                "icon": "fa-regular fa-compass"
+            }
+        ]
+    },
+    {
+
+        "title": "Discover",
+        "content":[
+            {
+                "id": 4,
+                "title": "New and Notable",
+                "icon": "fa-solid fa-clover"
+            },
+            {
+                "id": 5,
+                "title": "Release-calender",
+                "icon":"fa-regular fa-calendar"
+            },
+            {
+                "id": 6,
+                "title": "Events",
+                "icon": "fa-solid fa-ticket"
+            }
+        ]
+    },
+    {
+        "title": "Your Collection",
+        "content": [
+            {
+                "id": 7,
+                "title": "Favourite Songs",
+                "icon": "fa-regular fa-heart"
+            },
+            {
+                "id": 8,
+                "title": "Artist",
+                "icon": "fa-regular fa-user"
+            },
+            {
+                "id": 9,
+                "title": "Albums",
+                "icon": "fa-regular fa-star"
+            }
+        ]
+    }
+]

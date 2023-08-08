@@ -1,0 +1,96 @@
+@import '../../App.scss';
+
+#sidenav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $height;
+    width: calc($width * 0.22);
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    transition: width .3s ease;
+
+    header{
+        position: relative;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        #logo{
+            width: calc($wk-width * 0.1);
+        }
+
+        .expand{
+            position: relative;
+            transition: position .3s ease;
+            padding: 0 1em;
+        }
+    }
+
+    .sd-content{
+        position: relative;
+        width: 100%;
+        
+        section{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: .1em;
+            
+            p{
+                padding: .5em 1.5em;
+                color: rgba($accent, 0.7);
+            }
+            
+            .sd-btn{
+                position: relative;
+                width: 100%;
+                padding:  .1em 1em;
+                
+                p{
+                    border-radius: $small-radius;
+                    color: $black;
+                    padding: .8em;
+
+                    &:hover{
+                        background: $black;
+                        color: $white;
+                    }
+
+                    &.active{
+                        color: $white;
+                        background: $black;
+                    }
+                }
+                
+                
+                &.active{
+                    border-right: 0.2em solid $black;
+                }
+            }
+        }
+    }
+
+    &.active{
+        width: 7%;
+
+        header{
+            .expand{
+                padding: .3em 1.5em;
+            }
+        }
+
+        .sd-content{
+            section{
+                border-bottom: 0.02em solid $black;
+                margin: 2em 0 2em 0;
+                .sd-btn{
+                    display: grid;
+                    place-items: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../sass/mixins';
+@import '../../App.scss';
+
+#t-btn{
+    position: relative;
+    width: max-content;
+    outline: none;
+    background: none;
+    border: none;
+    font-family: $font;
+    cursor: pointer;
+    font-size: $text;
+    padding: .2em;
+
+    p{
+        @include flex
+    }
+}
